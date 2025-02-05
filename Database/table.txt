@@ -1,0 +1,13 @@
+CREATE DATABASE utang_db;
+
+USE utang;
+
+        CREATE TABLE IF NOT EXISTS utang (
+                id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                name VARCHAR(50) NOT NULL,
+                utang INT(11) NOT NULL, 
+                date_borrow DATE NOT NULL,
+                date_paid DATE NOT NULL,
+                total_paid INT(11) NOT NULL,
+                stat VARCHAR(25) NOT NULL,
+                );
