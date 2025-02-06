@@ -18,19 +18,23 @@
           <p class="display-5 fw-bold">Add Utang</p>
         </div>
         <div class="row">
-          <form class="form" action="../handlers/add_todo_handler.php" method="POST">
+          <form class="form" action="../handler/add_utang_handler.php" method="POST">
             <div class="my-3">
               <label>Name</label>
               <textarea class="form-control"  type="text" name="name"></textarea>
             </div>
             <div class="my-3">
-              <label>Amount</label>
-              <textarea class="form-control" name="description" id="digitOnlyTextarea" oninput="this.value = this.value.replace(/\D/g, '')"></textarea>
-              </div>
+              <label>Amount</label> 
+              <input class="form-control" type="number" name="amount" step="0.01" required>
+            </div>
             <div class="my-3">
-              <label>Date</label>
-              <input class="form-control" type="date" name="description" required />
-              </div>
+              <label>Whose</label> 
+              <select class="form-control" name="whose" required>
+                <option value="0">Akoang utang</option>
+                <option value="1">Utang sa ako</option>
+              </select>
+            </div>
+
             <div class="my-3">
               <button type="submit" class="btn btn-outline-dark">Add Utang</button>
             </div>

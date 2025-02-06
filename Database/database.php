@@ -6,7 +6,7 @@ try{
   $host = "localhost";
   $username = "root";
   $password = "";
-  $database = "utang";
+  $database = "utang_db";
 
 
   $conn = new mysqli($host, $username, $password, $database);

@@ -5,9 +5,8 @@ USE utang;
         CREATE TABLE IF NOT EXISTS utang (
                 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
                 name VARCHAR(50) NOT NULL,
-                utang INT(11) NOT NULL, 
-                date_borrow DATE NOT NULL,
-                date_paid DATE NOT NULL,
-                total_paid INT(11) NOT NULL,
-                stat VARCHAR(25) NOT NULL,
+                utang DECIMAL(9,2) NOT NULL,
+                total_paid DECIMAL(9,2) NOT NULL,
+                whose BOOLEAN NOT NULL,
+                stat BOOLEAN NOT NULL,
                 );
